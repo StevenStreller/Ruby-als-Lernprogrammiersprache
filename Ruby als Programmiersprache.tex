@@ -1,0 +1,158 @@
+\documentclass[12pt,DIV=14, version=first, BCOR=10mm,a4paper,twoside,parskip=half-,headsepline,headinclude]{scrartcl}
+% Grundgröße 12pt, zweiseitig
+% Standardpakete
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% deutsche Silbentrennung
+\usepackage[ngerman]{babel}
+% schöne Tabellen
+\usepackage{booktabs}
+% etwas Mathematik
+\usepackage{amsmath,amssymb}
+% Grafiken einbinden
+\usepackage{graphicx}
+% Kopf- und Fußzeilen
+\usepackage[headsepline,footsepline,automark]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+% Links anklickbar
+\usepackage{url,hyperref,color} 
+\definecolor{MidnightBlue}{cmyk}{0.98,0.13,0,0.43}
+\hypersetup{colorlinks,breaklinks=true, pdffitwindow=true,pdfpagelayout=SinglePage,
+            linkcolor=blue,pdfauthor={}, pdfdisplaydoctitle=true,
+            pdfsubject={},   % to be defined later
+            bookmarksnumbered,citecolor=MidnightBlue, 
+            urlcolor=MidnightBlue}
+\raggedbottom
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+
+
+% zum Ausprobieren
+\usepackage{blindtext}
+
+
+% jetzt gehts los
+\begin{document}% hier gehts los
+  \thispagestyle{empty} % Titelseite
+\includegraphics[width=0.2\textwidth]{Wortmarke_WI_schwarz}
+
+   {  ~ \sffamily
+  \vfill
+  {\Huge\bfseries Ruby als Lernprogrammiersprache}
+  \bigskip
+
+  {\Large 
+  Nicolai Böttger und Jon-Steven Streller \\[2ex]
+ Seminar-Arbeit im Studiengang "`Angewandte Informatik"'
+ \\[5ex]
+   \today } 
+}
+ \vfill
+  
+  ~ \hfill
+  \includegraphics[height=0.3\paperheight]{H_WI_Pantone1665} 
+
+\vspace*{-3cm}
+
+  \newpage \thispagestyle{empty}
+ \begin{tabular}{ll}
+{\bfseries\sffamily Autor 1:} &  Nicolai Böttger \\ 
+            & 1476431 \\
+            & nicolai.boettger@stud.hs-hannover.de \\
+            & Verfasste Seiten/Abschnitte: ...
+            \\[5ex]
+{\bfseries\sffamily Autorin 2:} & Jon-Steven Streller \\ 
+            & 1475759 \\
+            & steven.streller@stud.hs-hannover.de \\
+           & Verfasste Seiten/Abschnitte: ... \\[5ex]
+ {\bfseries\sffamily Prüferin:} &Prof. Dr. Dennis Allerkamp \\
+          & Abteilung Informatik, Fakultät IV \\
+         & Hochschule Hannover \\
+        & dennis.allerkamp@hs-hannover.de
+\end{tabular}
+
+\vfill
+
+\begin{center} \sffamily\bfseries Selbständigkeitserklärung \end{center}
+% fett und zentriert in der minipage
+
+Mit der Abgabe der Ausarbeitung erklären wir, dass wir die eingereichte Seminar-Arbeit
+selbständig und ohne fremde Hilfe verfasst, andere als die von uns angegebenen Quellen
+und Hilfsmittel nicht benutzt und die den benutzten Werken wörtlich oder
+inhaltlich entnommenen Stellen als solche kenntlich gemacht haben. 
+\vspace*{7ex}
+
+Hannover, den \today \hfill 
+
+\pagebreak
+
+  \pdfbookmark[0]{Inhalt}{contents}
+  \tableofcontents  % Inhaltsverzeichnis
+
+\pagebreak
+
+%\input{abkuerz.tex}      % Einbinden von Tex-Files
+%\input{einfuehrung.tex}
+
+
+% durch eigenen Text ersetzen
+
+\section{Einführung}
+\begin{flushleft}
+Die vorliegende Arbeit entstand im Rahmen des Seminars \textit{\glqq Programmiersprachen für den Einstieg\grqq}. Ziel des Seminars war es mehrere Programmiersprachen auf ihre Tauglichkeit im Anwendungsbereich einer pädagogischen Lehrveranstaltung zu analysieren. Hierbei wurde jede Programmiersprache einzeln von verschiedenen Studierenden in Zweiergruppen vorgestellt und die jeweiligen Ergebnisse Ihrer Forschung präsentiert. Nachfolgend entstand ein Austausch zwischen den Studierenden über positive und auch negative Auffälligkeiten in der Präsentation.
+\end{flushleft}
+
+\subsection{Vorgehensweise}
+\begin{flushleft}
+Um eine sinnvolle Bewertung der Sprache in Bezug zum Thema des Seminars zu erreichen haben wir zuerst nach Studien gesucht, welche Kriterien definieren, nach denen man eine Programmiersprache bewerten kann. Danach haben wir angefangen uns selbst in unsere vorzustellende Sprache \textit{\glqq Ruby\grqq} einzuarbeiten. Nachdem wir ein grundsätzliches Verständnis der Sprache bekommen haben, haben wir angefangen \textit{\glqq Ruby\grqq} in Bezug zu den vorher gewählten Kriterien zu bewerten.
+\end{flushleft}
+
+\subsection{Aufbau der Arbeit}
+\begin{flushleft}
+Im folgenden \textbf{Hauptteil} wird die Programmiersprache \textit{\glqq Ruby\grqq} vorgestellt. Hierbei werden auf besondere Merkmale der Sprache eingegangen und \textit{Anwendungsbeispiele} visualisiert. Anschließend werden die Methodik und die Kriterien erläutert und definiert. Zum Abschluss werden die Forschungsergebnisse in Form einer Bewertung dargelegt.
+\end{flushleft}
+
+\section{Hauptteil}
+
+\subsection{Was ist Ruby?}
+\begin{flushleft}
+Im Jahr 1995 veröffentlichte \textit{Yukihiro Matsumoto} die erste Version (Version 0.95) von \textit{\glqq Ruby\grqq}. \textit{Yukihiro Matsumoto} lies sich während der Entwicklung von \textit{\glqq Ruby\grqq} von mehreren Programmiersprachen wie z.B. Perl, Smalltalk, Lisp, Ada inspirieren. \textit{Ruby} besitzt eine tief integrierte 
+Objektorientierung\footnote{\label{foot:1} Ein System besteht in der Objektorientierung ausschließlich aus Objekten, die miteinander über Nachrichten kommunizieren. Jedes Objekt verfügt über Eigenschaften und Methoden. Die Eigenschaften beschreiben dabei über ihre Werte den Zustand eines Objektes, die Methoden die möglichen Handlungen eines Objektes. vgl. [WL01]} (kurz OO).
+\end{flushleft}
+
+\subsection{Arbeitsweise von Ruby}
+\begin{flushleft}
+An dieser Stelle wird kurz auf die interne Arbeitsweise von Ruby eingegangen. Ruby-Code wird ein Statement nach dem anderen, von einem Interpreter übersetzt und ausgeführt. Im Gegensatz zum Compiler, analysiert dieser den Code schneller und das Schrittweise übersetzen erleichtert das Finden von Fehlern im Code, allerdings hat ein kompiliertes Programm meist eine bessere Performance.
+\end{flushleft}
+
+\subsection{Methodik}
+\begin{flushleft}
+Um die Programmiersprache Ruby in Bezug zur Fragestellung, ob sie sich als Programmiersprache für den Einstieg eignet bewerten zu können, wurde als Methodik ein Kriterienkatalog erstellt, welcher die Sprache in hinsichtlich verschiedener Bereiche untersucht. Dieser Katalog besteht aus den Kriterien Einstiegsfreundlichkeit, Skalierbarkeit, Verständlichkeit, Dokumentation, Verbreitung der Sprache und Ausstattung der Schule. Eine besondere Gewichtung wurde hierbei auf die Kriterien Skalierbarkeit und Verständlichkeit gelegt, da diese die grundlegenden Aspekte zum Verstehen der Sprache sind. Nach einer kurzen Erläuterung der Kriterien, werden diese in Bezug zur Programmiersprache Ruby gesetzt und es wird erörtert, inwiefern das Kriterium zutrifft (trifft voll zu, trifft teilweise zu, trifft nicht zu)
+\end{flushleft}
+
+\subsubsection{Einstiegsfreundlichkeit}
+\begin{flushleft}
+Das Kriterium der \glqq Einstiegsfreundlichkeit\grqq \, fast alles zusammen, was benötigt wird um mit dem Programmieren in der Sprache anzufangen. So sollte die Installation von möglichen Compilern oder Interpretern nicht zu aufwändig und ohne große Fachkenntnisse vorgenommen werden können.
+\end{flushleft}
+
+\subsubsection{Skalierbarkeit}
+
+\section{Schlussbemerkungen}
+\begin{flushleft}
+
+\end{flushleft}
+
+\pagebreak
+
+\section{Literaturverzeichnis}
+\begin{flushleft}
+\href{https://wirtschaftslexikon.gabler.de/definition/objektorientierung-43907} {[WL01] Wirtschaftslexikon Gabler}
+\end{flushleft}
+
+% Literatur
+\bibliographystyle{alpha}
+%\bibliography{mybib}
+
+\end{document}
+
