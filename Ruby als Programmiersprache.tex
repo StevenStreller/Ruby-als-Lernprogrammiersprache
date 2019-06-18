@@ -16,12 +16,12 @@
 \usepackage[headsepline,footsepline,automark]{scrlayer-scrpage}
 \pagestyle{scrheadings}
 % Links anklickbar
-\usepackage{url,hyperref,color} 
+\usepackage{url,hyperref,color}
 \definecolor{MidnightBlue}{cmyk}{0.98,0.13,0,0.43}
 \hypersetup{colorlinks,breaklinks=true, pdffitwindow=true,pdfpagelayout=SinglePage,
             linkcolor=blue,pdfauthor={}, pdfdisplaydoctitle=true,
             pdfsubject={},   % to be defined later
-            bookmarksnumbered,citecolor=MidnightBlue, 
+            bookmarksnumbered,citecolor=MidnightBlue,
             urlcolor=MidnightBlue}
 \raggedbottom
 \renewcommand{\topfraction}{1}
@@ -42,27 +42,27 @@
   {\Huge\bfseries Ruby als Lernprogrammiersprache}
   \bigskip
 
-  {\Large 
+  {\Large
   Nicolai Böttger und Jon-Steven Streller \\[2ex]
  Seminar-Arbeit im Studiengang "`Angewandte Informatik"'
  \\[5ex]
-   \today } 
+   \today }
 }
  \vfill
-  
+
   ~ \hfill
-  \includegraphics[height=0.3\paperheight]{H_WI_Pantone1665} 
+  \includegraphics[height=0.3\paperheight]{H_WI_Pantone1665}
 
 \vspace*{-3cm}
 
   \newpage \thispagestyle{empty}
  \begin{tabular}{ll}
-{\bfseries\sffamily Autor 1:} &  Nicolai Böttger \\ 
+{\bfseries\sffamily Autor 1:} &  Nicolai Böttger \\
             & 1476431 \\
             & \href{mailto:nicolai.boettger@stud.hs-hannover.de}{nicolai.boettger@stud.hs-hannover.de} \\
             & Verfasste Seiten/Abschnitte: ...
             \\[5ex]
-{\bfseries\sffamily Autor 2:} & Jon-Steven Streller \\ 
+{\bfseries\sffamily Autor 2:} & Jon-Steven Streller \\
             & 1475759 \\
             & \href{mailto:steven.streller@stud.hs-hannover.de}{steven.streller@stud.hs-hannover.de} \\
            & Verfasste Seiten/Abschnitte: ... \\[5ex]
@@ -80,10 +80,10 @@
 Mit der Abgabe der Ausarbeitung erklären wir, dass wir die eingereichte Seminar-Arbeit
 selbständig und ohne fremde Hilfe verfasst, andere als die von uns angegebenen Quellen
 und Hilfsmittel nicht benutzt und die den benutzten Werken wörtlich oder
-inhaltlich entnommenen Stellen als solche kenntlich gemacht haben. 
+inhaltlich entnommenen Stellen als solche kenntlich gemacht haben.
 \vspace*{7ex}
 
-Hannover, den \today \hfill 
+Hannover, den \today \hfill
 
 \pagebreak
 
@@ -122,7 +122,7 @@ Die nun genannten Anforderungen sind durch die Recherche und Sensibilisierung mi
 
 \subsection{Was ist Ruby?} \label{Was ist Ruby?}
 \begin{flushleft}
-Im Jahr 1995 veröffentlichte \textit{Yukihiro Matsumoto} die erste Version (Version 0.95) von \textit{\glqq Ruby\grqq}. \textit{Yukihiro Matsumoto} lies sich während der Entwicklung von \textit{\glqq Ruby\grqq} von mehreren Programmiersprachen wie z.B. Perl, Smalltalk, Lisp, Ada inspirieren. \textit{Ruby} besitzt eine tief integrierte 
+Im Jahr 1995 veröffentlichte \textit{Yukihiro Matsumoto} die erste Version (Version 0.95) von \textit{\glqq Ruby\grqq}. \textit{Yukihiro Matsumoto} lies sich während der Entwicklung von \textit{\glqq Ruby\grqq} von mehreren Programmiersprachen wie z.B. Perl, Smalltalk, Lisp, Ada inspirieren. \textit{Ruby} besitzt eine tief integrierte
 Objektorientierung\footnote{\label{foot:1} Ein System besteht in der Objektorientierung ausschließlich aus Objekten, die miteinander über Nachrichten kommunizieren. Jedes Objekt verfügt über Eigenschaften und Methoden. Die Eigenschaften beschreiben dabei über ihre Werte den Zustand eines Objektes, die Methoden die möglichen Handlungen eines Objektes. vgl. [WL01]} (kurz OO). Ruby wird ungefähr in einem Intervall von 3 Monaten mit Updates versorgt. Im Moment (17. April 2019) befindet sich Ruby in Version 2.6.3 Die Version 2.7.0 steht schon in einer Vorabversion zur freien Verfügung. Die Programmiersprache Ruby ist Plattformunabhängig und somit auf kein bestimmtes System beschränkt
 \end{flushleft}
 
@@ -136,7 +136,7 @@ An dieser Stelle wird kurz auf die interne Arbeitsweise von Ruby eingegangen. Di
 Um die Programmiersprache Ruby in Bezug zur Fragestellung, ob sie sich als Programmiersprache für den Einstieg eignet bewerten zu können, wurde als Methodik ein Kriterienkatalog erstellt, welcher die Sprache in hinsichtlich verschiedener Bereiche untersucht. Dieser Katalog besteht aus den Kriterien Einstiegsfreundlichkeit, Skalierbarkeit, Verständlichkeit, Dokumentation, Verbreitung der Sprache und Ausstattung der Schule. Eine besondere Gewichtung wurde hierbei auf die Kriterien Skalierbarkeit und Verständlichkeit gelegt, da diese die grundlegenden Aspekte zum Verstehen der Sprache sind. Nach einer kurzen Erläuterung der Kriterien, werden diese in Bezug zur Programmiersprache Ruby gesetzt und es wird erörtert, inwiefern das Kriterium zutrifft (trifft voll zu, trifft teilweise zu, trifft nicht zu)
 \end{flushleft}
 
-\subsubsection{Einstiegsfreundlichkeit} 
+\subsubsection{Einstiegsfreundlichkeit}
 
 \begin{flushleft}
 Das Kriterium der \textit{Einstiegsfreundlichkeit} fast alles zusammen, was benötigt wird um mit dem Programmieren in der Sprache anzufangen. So sollte die Installation von möglichen Compilern oder Interpretern nicht zu aufwändig sein und ohne große Fachkentnisse vorgenommen werden können. Auch wäre es von Vorteil, wenn die Installationsbestandteile nicht allzu viel Speicher einnehmen. Ebenfalls wird hier berücksichtigt, ob beispielsweise mehrere Dateien angelegt, oder andere Vorgänge wie ein mögliches Linken von Dateien geschehen muss, ehe man ein geschriebenes Programm ausführen kann.
@@ -153,7 +153,7 @@ Unter Skalierbarkeit wird alles bewertet, was mit den spezifischen Eigenschaften
 
 Durchaus positiv sind die herrschenden Konventionen in \textit{\glqq Ruby\grqq}. Hierbei lässt die Sprache selbst sehr viel Spielraum und Akzeptanz bei der Syntax und Semantik. Dies äußert sich sehr stark bei der Verwendung von Semikolon - während es bei vielen etablierten Programmiersprachen strikt und nur eine Richtlinie gibt, wird bei \textit{\glqq Ruby\grqq} ein ganz anderer Weg eingeschlagen. Es ist möglich, aber nicht nötig Semikolons zu setzen. Es ist auch nicht nötig sich für einen Stil zu entscheiden, so kann jeder seinen eigenen Programmierstil in dem Lehrprozess entwickeln. Wie in Abschnitt \ref{Verständlichkeit} bereits erwähnt, ist das Konzept der Objektorientierung nicht zwingend zum anwenden von \textit{\glqq Ruby\grqq} erforderlich. Dadurch ist es von \textit{\glqq Ruby\grqq} selbst gegeben, bereits mit nur \textbf{einer} Zeile Code eine Ausgabe auf der Kommandozeile\footnote{\label{foot:2} {Kommandozeile: Hierbei handelt es sich um eine grundlegende Anwendung die meist durch Texteingaben gesteuert wird.}} zu wiedergeben. Dieser Effekt wird erzielt weil Klassen in \textit{\glqq Ruby\grqq} nicht erforderlich sind und somit sehr viel Quellcode bei einfachen Anwendungen eingespart werden kann.
 
-In den meisten Fällen haben Programmiersprachen nur einen oder wenig Anwendungsgebiete. \textit{\glqq Ruby\grqq} sticht hierbei etwas heraus, denn die Vielseitigkeit der Programmiersprache ist enorm. \textit{\glqq Ruby\grqq} besitzt die Möglichkeit als Bash-Anwendung\footnote{\label{foot:3} {Bash-Anwendung: automatisiertes Programmieren auf der Kommandozeile}} und separat in der Webentwicklung zu fungieren. Dies ist ein exemplarisches Beispiel wie stark der Kontrast beziehungsweise die Einsatzmöglichkeiten von \textit{\glqq Ruby\grqq} sind. 
+In den meisten Fällen haben Programmiersprachen nur einen oder wenig Anwendungsgebiete. \textit{\glqq Ruby\grqq} sticht hierbei etwas heraus, denn die Vielseitigkeit der Programmiersprache ist enorm. \textit{\glqq Ruby\grqq} besitzt die Möglichkeit als Bash-Anwendung\footnote{\label{foot:3} {Bash-Anwendung: automatisiertes Programmieren auf der Kommandozeile}} und separat in der Webentwicklung zu fungieren. Dies ist ein exemplarisches Beispiel wie stark der Kontrast beziehungsweise die Einsatzmöglichkeiten von \textit{\glqq Ruby\grqq} sind.
 
 Das erweitern von Bibliotheken beziehungsweise Paketen gestaltet sich in \textit{\glqq Ruby\grqq} denkbar einfach. Hier punktet \textit{\glqq Ruby\grqq} mit einem zentralen Paketverwaltungssystem (Link: \href {https://rubygems.org/} {Ruby Gems})  in dem zusätzlich für jedes Paket eine Installationsanleitung sowie eine Dokumentation und Quellcodebeispiele zum verdeutlichen der Arbeitsweise des Paketes beinhaltet. Hierbei muss jedoch beachtet werden, dass jeder die Möglichkeit hat Pakete selbst zu veröffentlichen und somit nicht verifiziert werden kann, dass jedes Paket fehlerfrei beziehungsweise auf einem gewissen Niveau entwickelt wurde. Allerdings ist ein hoher Download-Aufruf ein Indikator dass das Paket einem gewissen Standard entspricht. Hierbei kann \textbf{nur} von einer Korrelation zwischen Funktionalität des Quellcodes und Download-Anzahl ausgegangen werden!
 
@@ -165,9 +165,9 @@ Trotz der Tatsache dass die Sprache eine hohe Toleranz in Bezug auf \textit{Skal
 
 \subsubsection{Verständlichkeit} \label{Verständlichkeit}
 \begin{flushleft}
-Bei der \textit{Verständlichkeit} geht es vor allem, dass der geschriebene Quellcode möglichst simpel und verständlich wirkt. Ein abstrakter Quellcode wäre nicht fördernd um grundlegende Konzepte des Programmieren zu vermitteln. Außerdem ist ein schnelles und klares Feedback des Interpreters essentiell.
+Bei der \textit{Verständlichkeit} geht es vor allem darum, dass der geschriebene Quellcode möglichst simpel und verständlich wirkt. Ein abstrakter Quellcode wäre nicht fördernd um grundlegende Konzepte des Programmieren zu vermitteln. Außerdem ist ein schnelles und klares Feedback des Interpreters essentiell, um angenehm und ohne großes Suchen nach Fehlern programmieren zu können.
 
-Die Programmiersprache \textit{\glqq Ruby\grqq} besitzt eine sehr hohe Skalierbarkeit. Auch wenn \textit{\glqq Ruby\grqq} eine tief integrierte Objektorientierung (nachstehend \glqq OO\grqq) \, besitzt, ist es nicht zwingend erforderlich das Konzept der eigentlichen OO zu verstehen. In \textit{\glqq Ruby\grqq} ist es auch nicht nötig einen expliziten Einstiegspunkt zu definieren, wie es zum Beispiel in Java mit der klassischen Main-Methode der Fall ist. Was das erlernen der Programmiersprache \textit{\glqq Ruby\grqq} auch deutlich vereinfacht, ist dass \textit{\glqq Ruby\grqq} an dem Englischen angelehnt ist und der gesprochenen Sprache sehr ähnelt. Dies äußert sich öfter in Quellcodebeispielen, bei denen man einzelne Abschnitte wie gesprochene Sätze ablesen kann. Der \textit{Interpreter} hilft aktiv bei der Fehlersuche im Quellcode und somit ist der Grad der Frustration bei nichtfunktionierenden Code geringer als bei Programmiersprachen die auf einen \textit{Kompilieren} (engl. Compiler) setzen. 
+Die Programmiersprache \textit{\glqq Ruby\grqq} besitzt eine sehr hohe Skalierbarkeit. Auch wenn \textit{\glqq Ruby\grqq} eine tief integrierte Objektorientierung (nachstehend \glqq OO\grqq) \, besitzt, ist es nicht zwingend erforderlich das Konzept der eigentlichen OO zu verstehen. In \textit{\glqq Ruby\grqq} ist es auch nicht nötig einen expliziten Einstiegspunkt zu definieren, wie es zum Beispiel in Java mit der klassischen Main-Methode der Fall ist. Was das erlernen der Programmiersprache \textit{\glqq Ruby\grqq} auch deutlich vereinfacht, ist dass \textit{\glqq Ruby\grqq} an dem Englischen angelehnt ist und der gesprochenen Sprache sehr ähnelt. Dies äußert sich öfter in Quellcodebeispielen, bei denen man einzelne Abschnitte wie gesprochene Sätze ablesen kann. Der \textit{Interpreter} hilft aktiv bei der Fehlersuche im Quellcode und somit ist der Grad der Frustration bei nichtfunktionierenden Code geringer als bei Programmiersprachen die auf einen \textit{Kompilieren} (engl. Compiler) setzen.
 
 Dementsprechend trifft das gewählte Kriterium der \textit{Verständlichkeit} voll zu.
 \end{flushleft}
@@ -200,14 +200,20 @@ Dementsprechend trifft das gewählte Kriterium der \textit{Ausstattung der Schul
 
 
 \section{Schlussbemerkungen}
-\begin{flushleft} 
-Bei der eigentlichen Forschungsfrage hatten die Forscher in dem Fall die Studierenden freie Wahl bei der Auswahl der Kriterien und diese waren in der Realität auch öfter sehr unterschiedlich. In manchen Gruppierungen war zum Beispiel das Kriterium \textit{Kosten} eine relativ starke Gewichtung, während es in anderen Präsentationen gar keine Erwähnung fand. Der generelle Vergleich der verschiedenen Arbeiten gestaltet sich ohnehin schon schwer weshalb nur ein empirischer Vergleich in Frage kommt. Es ist im Endeffekt seine eigene Meinung und Person A wird die Arbeit besser finden und Person B diese. 
+\begin{flushleft}
+Bei der eigentlichen Forschungsfrage hatten die Forscher in dem Fall die Studierenden freie Wahl bei der Auswahl der Kriterien und diese waren in der Realität auch öfter sehr unterschiedlich. In manchen Gruppierungen war zum Beispiel das Kriterium \textit{Kosten} eine relativ starke Gewichtung, während es in anderen Präsentationen gar keine Erwähnung fand. Der generelle Vergleich der verschiedenen Arbeiten gestaltet sich ohnehin schon schwer weshalb nur ein empirischer Vergleich in Frage kommt. Es ist im Endeffekt seine eigene Meinung und Person A wird die Arbeit besser finden und Person B diese.
 
-
+\pagebreak
+\section{Bewertung}
+\begin{flushleft}
+In diesem Abschnitt wird eine abschließende Bewertung, zu der Frage, ob sich \textit{\glqq Ruby\grqq} als erste Programmiersprache für den Einsatz im Unterricht eignet zusammenfassed dargestellt. Die jeweiligen Bewertungen der einzelnen Kriterien führen zu einer Gesamtbewertung der Sprache von drei mal
+{\glqq trifft voll zu\grqq} und drei mal {\glqq trifft teilweise zu\grqq}. Im Durchschnitt schneidet \textit{\glqq Ruby\grqq} also eher positiv ab.
+//Zusammenfassung der einzelnen Kriterien...//
+Trotzdem ist dieses Ergebnis mit Vorsicht zu genießen, da es eigentlich notwendig ist, die Sprache an dieser Stelle mit anderen zu vergleichen, damit diese Bewertungen eine solide Aussagekraft bekommen.
+>
 \end{flushleft}
 
 \pagebreak
-
 
 \section{Literaturverzeichnis}
 \begin{flushleft}
@@ -231,4 +237,3 @@ https://www.ruby-lang.org/en/downloads/releases
 %\bibliography{mybib}
 
 \end{document}
-
